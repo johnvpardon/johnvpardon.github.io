@@ -1,0 +1,7 @@
+#!/usr/bin/perl
+
+die "Do not update Princeton website!\n";
+
+$cmd = "rsync -v -c -r -p -t -h -u -L --exclude=.dropbox.attr --progress --delete . jpardon\@math.princeton.edu:public_html/";
+print "$cmd\n";
+system $cmd;
