@@ -78,7 +78,6 @@ for (@entries)
 }
 print $PAPERSHTML "</ol>\n";
 close $PAPERSHTML;
-close $PAPERSTEX;
 
 open($INDEXTEMPLATE, "<", "index_template.html") or die "ERROR: could not find index_template.html\n";
 open($INDEX, ">", "index.html") or die "ERROR: could not create index.html\n";
