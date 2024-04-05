@@ -3,7 +3,7 @@
 system "cp ../cv/cv.pdf .";
 
 system "cp ../writing/drafts/holomorphiccurves/copyright/holomorphiccurves-copyright-1.pdf holomorphiccurves-2021.pdf";
-#system "cp ../writing/drafts/holomorphiccurves/copyright/holomorphiccurves-copyright-2.pdf holomorphiccurves-2024.pdf";
+system "cp ../writing/drafts/holomorphiccurves/copyright/holomorphiccurves-copyright-2.pdf holomorphiccurves-2024.pdf";
 
 open($BIB, "<", "../writing/pardon.bib") or die "ERROR: could not open ../writing/pardon.bib\n";
 {
