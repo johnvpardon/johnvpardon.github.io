@@ -1,5 +1,5 @@
 #!/usr/bin/perl
 
-$cmd = "rsync -v -c -r -p -t -h -u -L --exclude=.dropbox.attr --progress --delete . jpardon\@calc.math.stonybrook.edu:www/";
+$cmd = "rsync -v -c -r -p -t -h -u -L --exclude=.dropbox.attr --exclude=.git --progress --delete . jpardon\@calc.math.stonybrook.edu:www/";
 print "$cmd\n";
 system $cmd;
