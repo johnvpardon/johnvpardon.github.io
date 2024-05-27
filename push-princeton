@@ -1,5 +1,11 @@
 #!/usr/bin/perl
 
+$cmd = "scp redirect.html jpardon\@math.princeton.edu:public_html/index.html";
+print "$cmd\n";
+system $cmd;
+
+die;
+
 die "Do not update Princeton website!\n";
 
 $cmd = "rsync -v -c -r -p -t -h -u -L --exclude=.dropbox.attr --exclude=.git --progress --delete . jpardon\@math.princeton.edu:public_html/";
