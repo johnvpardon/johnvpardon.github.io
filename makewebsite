@@ -55,7 +55,7 @@ for (@entries)
 	}
 	($htmltitle = $entry{'TITLE'}) =~ s/[{}]//g;
 	print $PAPERSHTML "\">$htmltitle</a>. ";
-	if($entry{'JOURNALHTML'}){$journal = $entry{'JOURNALHTML'}}elsif($entry{'JOURNAL'}){$journal = $entry{'JOURNAL'}}elsif($entry{'SERIES'}){$journal = $entry{'SERIES'}}
+	if($entry{'JOURNALHTML'}){$journal = $entry{'JOURNALHTML'}}elsif($entry{'JOURNAL'}){$journal = $entry{'JOURNAL'}}elsif($entry{'SERIES'}){$journal = $entry{'SERIES'}}elsif($entry{'BOOKTITLE'}){($journal = $entry{'BOOKTITLE'})=~s/[{}]//g;}
 	print $PAPERSHTML "<EM>$journal</EM> ";
 	if($entry{'VOLUME'}){print $PAPERSHTML "<STRONG>$entry{'VOLUME'}</STRONG> ";}
 	print $PAPERSHTML "($entry{'YEAR'})";
