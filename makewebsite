@@ -63,7 +63,7 @@ for (@entries)
 	if($entry{'PAGES'}){print $PAPERSHTML ", $entry{'PAGES'}";}
 	print $PAPERSHTML ".";
 	if($entry{'URL'}){print $PAPERSHTML " <a href=\"$entry{'URL'}\">Published Version</a>."}
-	if($entry{'MRNUMBER'}){($number) = ($entry{'MRNUMBER'} =~ /(\d*)(\D|$)/);print $PAPERSHTML " <a href=\"http://www.ams.org/mathscinet-getitem?mr=$number\">MR$number</a>."}
+	if($entry{'MRNUMBER'}){($number) = ($entry{'MRNUMBER'} =~ /(\d*)(\D|$)/);print $PAPERSHTML " <a href=\"https://mathscinet.ams.org/mathscinet/article?mr=$number\">MR$number</a>."}
 	print $PAPERSHTML "</li value></p>\n";
 	
 	if($entry{'AUTHOR'} ne "John Pardon")
